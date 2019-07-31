@@ -12,7 +12,7 @@ A quick way to implement a paging pattern for a RecyclerView. PagingRecycler wil
 	}
 
 		dependencies {
-	        compile 'com.github.Batterii:PagingRecycler:v1.1.1'
+	        implementation 'com.github.hamzaahmedkhan:PagingRecycler:v1.2'
 	}
 ```
 ## Usage
@@ -35,9 +35,6 @@ public class MyAdapter extends PagingAdapter{
   @Override
   public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
     // Do your normal view creation
-
-    // End with this
-    return super.onCreateViewHolder(parent, viewType);
 
   }  
 
