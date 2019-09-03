@@ -1,13 +1,10 @@
-package com.example.buttonsmasher.adapter.PagingAdapterBS;
+package com.akiniyalocts.pagingrecycler;
 
 import android.os.Handler;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.support.v7.widget.StaggeredGridLayoutManager.LayoutParams;
 
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams;
 
 public abstract class PagingAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public static int VIEW_TYPE_PAGING = -100;
@@ -55,11 +52,10 @@ public abstract class PagingAdapter extends RecyclerView.Adapter<RecyclerView.Vi
 
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (this.pagingDelegate != null && this.pagingDelegate.isFullspanLoadingView() && this.pagingDelegate.getRecyclerView().getLayoutManager() instanceof StaggeredGridLayoutManager) {
-            LayoutParams layoutParams = (LayoutParams)holder.itemView.getLayoutParams();
+            LayoutParams layoutParams = (LayoutParams) holder.itemView.getLayoutParams();
             layoutParams.setFullSpan(true);
         }
 
     }
-
 
 }

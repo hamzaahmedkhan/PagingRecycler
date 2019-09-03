@@ -1,6 +1,6 @@
 package com.akiniyalocts.pagingrecycler;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Intermediates between your @see PagingAdapter and your Activity.
